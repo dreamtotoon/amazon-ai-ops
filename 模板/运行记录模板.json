@@ -1,0 +1,12 @@
+{
+  "run_id": "RUN-YYYYMMDD-001",
+  "product_id": "UNKNOWN",
+  "operator": "UNKNOWN",
+  "started_at": "UNKNOWN",
+  "finished_at": null,
+  "skill_versions": {},
+  "data_sources": [],
+  "status": "draft",
+  "human_reviewer": null,
+  "known_issues": []
+}

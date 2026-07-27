@@ -1,0 +1,27 @@
+# 密钥与本地配置
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+secrets/
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+
+# 真实产品项目与原始资料：只保留仓库内的模板
+/产品项目/*
+!/产品项目/.gitkeep
+/原始数据/
+/图片素材/
+
+# 常见大文件与本地输出
+*.zip
+*.log
+*.tmp
+输出/
+.DS_Store

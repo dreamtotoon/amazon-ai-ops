@@ -1,0 +1,21 @@
+name: 基础校验
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+jobs:
+  文档与脚本检查:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: 检查 Python 脚本语法
+        run: python -m compileall 脚本
+      - name: 检查 JSON 模板
+        run: |
+          python -m json.tool 模板/运行记录模板.json > /dev/null
+          python -m json.tool 模板/证据索引模板.json > /dev/null
